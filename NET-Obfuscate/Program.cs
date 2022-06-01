@@ -20,7 +20,7 @@ namespace Obfuscate
         // Reference: https://stackoverflow.com/a/1344242/11567632
         public static string random_string(int length)
         {
-            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZqwertyuioplkjhgfdsazxcvbnmضصثقفغعهخحطكمنتالبيسشئءؤرلاىةآإًٍَُِ~ْ0123456789";
             string name = "";
             do {
                 name = new string(Enumerable.Repeat(chars, length).Select(s => s[random.Next(s.Length)]).ToArray());
